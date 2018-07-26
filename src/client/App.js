@@ -17,7 +17,9 @@ class App extends Component {
     fetch("/api/getUser")
       .then(res => res.json())
       .then(user => this.setState({ username: user.username }));
-  }
+   }
+
+  
 
   actionIncrement = (event) => {
     this.props.actionIncrement();
